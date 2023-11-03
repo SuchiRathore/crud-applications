@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>TH elements define table headers</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+  </tr>
+  
+  <tr>
+    { % for i in data %}
+    <td>{{i.name}}</td>
+    <td>{{i.email}}</td>
+    <td>{{i.phone}}</td>
+    {% endfor %}
+  </tr>
+</table>
+
+<p>To understand the example better, we have added borders to the table.</p>
+
+</body>
+</html>
+
